@@ -6,11 +6,11 @@ let kpk1 = document.querySelector('.kpk1');
 let b1 = document.querySelector('.b1');
 
 f1.addEventListener('keyup', function() {
-  pk1.textContent = f1.value / 1;
+  pk1.textContent = f1.value.replace(/\,/g, '.') / 1;
 });
 
 kpk1.parentNode.parentNode.addEventListener('keyup', function() {
-  kpk1.textContent = pk1.textContent * g1.value;
+  kpk1.textContent = pk1.textContent * g1.value.replace(/\,/g, '.');
   legend1.textContent = kpk1.textContent;
 });
 
@@ -22,11 +22,11 @@ let kpk2 = document.querySelector('.kpk2');
 let b2 = document.querySelector('.b2');
 
 f2.addEventListener('keyup', function() {
-  pk2.textContent = f2.value / 1;
+  pk2.textContent = f2.value.replace(/\,/g, '.') / 1;
 });
 
 kpk2.parentNode.parentNode.addEventListener('keyup', function() {
-  kpk2.textContent = pk2.textContent * g2.value;
+  kpk2.textContent = pk2.textContent * g2.value.replace(/\,/g, '.');
   legend2.textContent = kpk2.textContent;
 });
 //33333333
@@ -36,7 +36,7 @@ let pk31 = document.querySelector('.pk31');
 let b3 = document.querySelector('.b3');
 
 f31.addEventListener('keyup', function() {
-  pk31.textContent = f31.value / 1;
+  pk31.textContent = f31.value.replace(/\,/g, '.') / 1;
 });
 
 let f32 = document.querySelector('.f32');
@@ -44,7 +44,7 @@ let g32 = document.querySelector('.g32');
 let pk32 = document.querySelector('.pk32');
 
 f32.addEventListener('keyup', function() {
-  pk32.textContent = f32.value / 1;
+  pk32.textContent = f32.value.replace(/\,/g, '.') / 1;
 });
 
 let f33 = document.querySelector('.f33');
@@ -52,7 +52,7 @@ let g33 = document.querySelector('.g33');
 let pk33 = document.querySelector('.pk33');
 
 f33.addEventListener('keyup', function() {
-  pk33.textContent = f33.value / 1;
+  pk33.textContent = f33.value.replace(/\,/g, '.') / 1;
 });
 
 let f34 = document.querySelector('.f34');
@@ -61,15 +61,15 @@ let pk34 = document.querySelector('.pk34');
 let kpk3 = document.querySelector('.kpk3');
 
 f34.addEventListener('keyup', function() {
-  pk34.textContent = f34.value / 1;
+  pk34.textContent = f34.value.replace(/\,/g, '.').replace(/\,/g, '.') / 1;
 });
 
 kpk3.parentNode.parentNode.addEventListener('keyup', function() {
   kpk3.textContent =
-    pk31.textContent * g31.value +
-    pk32.textContent * g32.value +
-    pk33.textContent * g33.value +
-    pk34.textContent * g34.value;
+    pk31.textContent * g31.value.replace(/\,/g, '.') +
+    pk32.textContent * g32.value.replace(/\,/g, '.') +
+    pk33.textContent * g33.value.replace(/\,/g, '.') +
+    pk34.textContent * g34.value.replace(/\,/g, '.');
 
   legend3.textContent = kpk3.textContent;
 });
@@ -84,19 +84,28 @@ let b4 = document.querySelector('.b4');
 
 f41.addEventListener('keyup', function() {
   pk4.textContent =
-    (parseInt(f41.value) + parseInt(f42.value) + parseInt(f43.value)) / 3;
+    (parseInt(f41.value.replace(/\,/g, '.')) +
+      parseInt(f42.value.replace(/\,/g, '.')) +
+      parseInt(f43.value.replace(/\,/g, '.'))) /
+    3;
 });
 f42.addEventListener('keyup', function() {
   pk4.textContent =
-    (parseInt(f41.value) + parseInt(f42.value) + parseInt(f43.value)) / 3;
+    (parseInt(f41.value.replace(/\,/g, '.')) +
+      parseInt(f42.value.replace(/\,/g, '.')) +
+      parseInt(f43.value.replace(/\,/g, '.'))) /
+    3;
 });
 f43.addEventListener('keyup', function() {
   pk4.textContent =
-    (parseInt(f41.value) + parseInt(f42.value) + parseInt(f43.value)) / 3;
+    (parseInt(f41.value.replace(/\,/g, '.')) +
+      parseInt(f42.value.replace(/\,/g, '.')) +
+      parseInt(f43.value.replace(/\,/g, '.'))) /
+    3;
 });
 
 kpk4.parentNode.parentNode.addEventListener('keyup', function() {
-  kpk4.textContent = pk4.textContent * g4.value;
+  kpk4.textContent = pk4.textContent * g4.value.replace(/\,/g, '.');
   legend4.textContent = kpk4.textContent;
 });
 /////555555
@@ -107,7 +116,7 @@ let kpk5 = document.querySelector('.kpk5');
 let b5 = document.querySelector('.b5');
 
 f51.addEventListener('keyup', function() {
-  pk51.textContent = f51.value / 1;
+  pk51.textContent = f51.value.replace(/\,/g, '.') / 1;
 });
 
 let f52 = document.querySelector('.f52');
@@ -115,12 +124,13 @@ let g52 = document.querySelector('.g52');
 let pk52 = document.querySelector('.pk52');
 
 f52.addEventListener('keyup', function() {
-  pk52.textContent = f52.value / 1;
+  pk52.textContent = f52.value.replace(/\,/g, '.') / 1;
 });
 
 kpk5.parentNode.parentNode.addEventListener('keyup', function() {
   kpk5.textContent =
-    pk51.textContent * g51.value + pk52.textContent * g52.value;
+    pk51.textContent * g51.value.replace(/\,/g, '.') +
+    pk52.textContent * g52.value.replace(/\,/g, '.');
   legend5.textContent = kpk5.textContent;
 });
 
@@ -129,11 +139,11 @@ let ipk = document.querySelector('.ipk');
 
 features.addEventListener('keyup', function() {
   ipk.textContent =
-    kpk1.textContent * b1.value +
-    kpk2.textContent * b2.value +
-    kpk3.textContent * b3.value +
-    kpk4.textContent * b4.value +
-    kpk5.textContent * b5.value;
+    kpk1.textContent * b1.value.replace(/\,/g, '.') +
+    kpk2.textContent * b2.value.replace(/\,/g, '.') +
+    kpk3.textContent * b3.value.replace(/\,/g, '.') +
+    kpk4.textContent * b4.value.replace(/\,/g, '.') +
+    kpk5.textContent * b5.value.replace(/\,/g, '.');
 });
 
 let kpk = document.querySelector('kpk');
