@@ -8,7 +8,8 @@ body {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
-  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 h1 {
   text-align: center;
@@ -110,7 +111,7 @@ input {
   background: orange;
 }
 .flex-container {
-  min-width: 555px;
   display: flex;
   align-items: flex-end;
+  flex-wrap: wrap;
 }
