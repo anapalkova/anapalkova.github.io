@@ -110,6 +110,7 @@ input {
   background: orange;
 }
 .flex-container {
+  min-width: 555px;
   display: flex;
   align-items: flex-end;
 }
