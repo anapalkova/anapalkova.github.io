@@ -169,4 +169,58 @@ features.addEventListener('keyup', function() {
   chart3.style.height = kpk3.textContent * 200 + 'px';
   chart4.style.height = kpk4.textContent * 200 + 'px';
   chart5.style.height = kpk5.textContent * 200 + 'px';
+
+  var chart = AmCharts.makeChart('chartdiv', {
+    creditsPosition: 'bottom-right',
+    type: 'radar',
+    theme: 'patterns',
+    dataProvider: [
+      {
+        KPK: 'Эффективность',
+        KPKvalue: kpk1.textContent
+      },
+      {
+        KPK: 'Производительность',
+        KPKvalue: kpk2.textContent
+      },
+      {
+        KPK: 'Удовлетворённость',
+        KPKvalue: kpk3.textContent
+      },
+      {
+        KPK: 'Свобода от риска',
+        KPKvalue: kpk4.textContent
+      },
+      {
+        KPK: 'Покрытие контекста',
+        KPKvalue: kpk5.textContent
+      }
+    ],
+    valueAxes: [
+      {
+        axisTitleOffset: 20,
+        minimum: 0,
+        axisAlpha: 0.15
+      }
+    ],
+    startDuration: 2,
+    graphs: [
+      {
+        balloonText: '[[value]] КПК',
+        bullet: 'round',
+        valueField: 'KPKvalue'
+      }
+    ],
+    categoryField: 'KPK',
+    exportConfig: {
+      menuTop: '10px',
+      menuRight: '10px',
+      menuItems: [
+        {
+          icon: '/lib/3/images/export.png',
+          format: 'png'
+        }
+      ]
+    }
+  });
 });

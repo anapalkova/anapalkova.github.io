@@ -112,6 +112,12 @@ input {
 }
 .flex-container {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   flex-wrap: wrap;
+  flex-direction: column;
+}
+#chartdiv {
+  width: 500px;
+  height: 300px;
+  font-size: 11px;
 }
