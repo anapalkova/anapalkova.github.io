@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #efefef;
+}
+.wrap {
+  display: flex;
+  align-items: flex-start;
+}
+ul {
+  width: 500px;
+  list-style: none;
+}
+li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+input {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.justify {
+  display: flex;
+  justify-content: space-between;
+  margin: 2px 0;
+}
+.pk {
+  display: block;
+  margin: 5px 0;
+}
+.feature {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+}
+.features {
+  margin-right: 20px;
+}
+.kpk {
+  margin: 20px;
+}
+.charts {
+  border-bottom: 1px solid black;
+  height: 200px;
+  align-items: flex-end;
+  display: flex;
+  margin-bottom: 20px;
+}
+.chart {
+  margin: 5px;
+  width: 50px;
+  transition: height 2s;
+}
+.legend {
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+#chart1 {
+  background: red;
+}
+#chart2 {
+  background: green;
+}
+#chart3 {
+  background: blue;
+}
+#chart4 {
+  background: brown;
+}
+#chart5 {
+  background: orange;
+}
+.mark {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+}
+.mark1 {
+  background: red;
+}
+.mark2 {
+  background: green;
+}
+.mark3 {
+  background: blue;
+}
+.mark4 {
+  background: brown;
+}
+.mark5 {
+  background: orange;
+}
+.flex-container {
+  display: flex;
+  align-items: flex-end;
+}
