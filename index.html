@@ -5,15 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- <script type="text/javascript" src="http://www.amcharts.com/lib/3/amcharts.js"></script> -->
-  <!-- <script type="text/javascript" src="http://www.amcharts.com/lib/3/radar.js"></script> -->
-  <!-- <script type="text/javascript" src="http://www.amcharts.com/lib/3/themes/patterns.js"></script> -->
   <link rel="stylesheet" href="style.css">
   <title>ВКР</title>
 </head>
 
 <body>
-  <h1>Качество при использовании</h1>
+  <a id="info_btn" href="#">Справка [?]</a>
+  <a id="close_btn" href="#">Закрыть [X]</a>
+
+  <h1>Процедуры методики валидации одностраничных WEB-приложений</h1>
+
+  <div id="greet" class="greet">
+    <p>Добро пожаловать!</p>
+    <a id="open_btn" href="#">Открыть программу</a>
+  </div>
+
   <div class="wrap" id="wrap">
     <div class="features" id="features">
       <h2>Характеристики</h2>
@@ -25,7 +31,7 @@
               <div class="justify">Результативность
                 <input class="f1" type="text">
               </div>
-              <div class="justify">γ:
+              <div class="justify">Коэффициент важности γ:
                 <input type="text" class="gamma g1">
               </div>
               <span class="pk">ПК:
@@ -34,7 +40,7 @@
             </li>
           </ul>
 
-          <div class="beta-cont"> β:
+          <div class="beta-cont">Коэффициент важности β:
             <input type="text" class="beta b1">
           </div>
         </div>
@@ -51,7 +57,7 @@
               <div class="justify">Производительность
                 <input class="f2" type="text">
               </div>
-              <div class="justify">γ:
+              <div class="justify">Коэффициент важности γ:
                 <input type="text" class="gamma g2">
               </div>
               <span class="pk">ПК:
@@ -60,7 +66,7 @@
             </li>
           </ul>
 
-          <div class="beta-cont"> β:
+          <div class="beta-cont">Коэффициент важности β:
             <input type="text" class="beta b2">
           </div>
         </div>
@@ -77,7 +83,7 @@
               <div class="justify">Полноценность
                 <input class="f31" type="text">
               </div>
-              <div class="justify">γ:
+              <div class="justify">Коэффициент важности γ:
                 <input type="text" class="gamma g31">
               </div>
               <span class="pk">ПК:
@@ -88,7 +94,7 @@
               <div class="justify">Доверие
                 <input class="f32" type="text">
               </div>
-              <div class="justify"> γ:
+              <div class="justify">Коэффициент важности γ:
                 <input type="text" class="gamma g32">
               </div>
               <span class="pk">ПК:
@@ -119,7 +125,7 @@
             </li>
           </ul>
 
-          <div class="beta-cont"> β:
+          <div class="beta-cont">Коэффициент важности β:
             <input type="text" class="beta b3">
           </div>
         </div>
@@ -147,7 +153,7 @@
                 <input class="f43" type="text">
               </div>
             </li>
-            <div class="justify">γ:
+            <div class="justify">Коэффициент важности γ:
               <input type="text" class="gamma g4">
             </div>
             <span class="pk">ПК:
@@ -155,7 +161,7 @@
             </span>
           </ul>
 
-          <div class="beta-cont"> β:
+          <div class="beta-cont">Коэффициент важности β:
             <input type="text" class="beta b4">
           </div>
         </div>
@@ -172,7 +178,7 @@
               <div class="justify">Полнота контекста
                 <input class="f51" type="text">
               </div>
-              <div class="justify">γ:
+              <div class="justify">Коэффициент важности γ:
                 <input type="text" class="gamma g51">
               </div>
               <span class="pk">ПК:
@@ -183,7 +189,7 @@
               <div class="justify">Гибкость
                 <input class="f52" type="text">
               </div>
-              <div class="justify">γ:
+              <div class="justify">Коэффициент важности γ:
                 <input type="text" class="gamma g52">
               </div>
               <span class="pk">ПК:
@@ -192,7 +198,7 @@
             </li>
           </ul>
 
-          <div class="beta-cont">β:
+          <div class="beta-cont">Коэффициент важности β:
             <input type="text" class="beta b5">
           </div>
         </div>
@@ -240,9 +246,9 @@
         <span class="ipk"></span>
       </div>
     </div>
-
-    <script src="script.js"></script>
-
+  </div>
+  <div class="copyright">© Напалкова Алёна</div>
+  <script src="script.js"></script>
 </body>
 
 </html>

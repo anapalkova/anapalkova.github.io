@@ -4,15 +4,50 @@ body {
   font-family: 'Roboto', sans-serif;
   background: #efefef;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 .wrap {
-  display: flex;
+  display: none;
   align-items: flex-start;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 850px;
   margin: 0 auto;
+}
+.copyright {
+  text-align: center;
+}
+#open_btn {
+  color: #fff;
+  border-radius: 10px;
+  background: rgb(54, 187, 109);
+  padding: 10px;
+  margin: 50px;
+}
+#info_btn {
+  color: #fff;
+  border-radius: 10px;
+  background: rgb(54, 134, 187);
+  padding: 10px;
+  position: absolute;
+  left: 30px;
+  margin-left: 30px;
+}
+#close_btn {
+  color: #fff;
+  border-radius: 10px;
+  background: rgb(187, 74, 54);
+  padding: 10px;
+  position: absolute;
+  right: 30px;
+  display: none;
+  margin-right: 30px;
 }
 h1 {
   text-align: center;
+  width: 100%;
+  margin: 0 auto;
 }
 
 ul {
@@ -28,6 +63,19 @@ input {
   width: 50px;
   border-radius: 5px;
   border: 1px solid #ccc;
+}
+#greet {
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 400px;
+  height: 200px;
+  margin: 50px auto;
+  margin-bottom: 20px;
+}
+p {
+  margin: 50px 0 30px 0;
 }
 .justify {
   display: flex;
