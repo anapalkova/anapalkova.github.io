@@ -63,7 +63,7 @@ input {
   height: 200px;
   align-items: flex-end;
   display: flex;
-  margin-bottom: 20px;
+  margin-top: 30px;
   overflow: hidden;
 }
 .chart {
@@ -72,8 +72,7 @@ input {
   transition: height 2s;
 }
 .legend {
-  margin-bottom: 20px;
-  margin-left: 20px;
+  margin: 7px 0 10px 0;
 }
 #chart1 {
   background: red;
