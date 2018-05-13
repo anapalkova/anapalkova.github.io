@@ -12,7 +12,7 @@ a {
   display: none;
   align-items: flex-start;
   flex-wrap: wrap;
-  max-width: 850px;
+  max-width: 870px;
   margin: 0 auto;
 }
 .copyright {
@@ -48,9 +48,12 @@ h1 {
   text-align: center;
   width: 100%;
   margin: 0 auto;
+  margin-bottom: 30px;
   padding-top: 50px;
 }
-
+h2 {
+  margin-top: 0;
+}
 ul {
   width: 350px;
   list-style: none;
@@ -107,9 +110,17 @@ p {
   width: 15px;
   height: 15px;
 }
+.charts_field {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  background: #fff;
+  margin-bottom: 10px;
+  margin-top: 55px;
+  padding: 10px;
+}
 .charts {
-  border-bottom: 1px solid black;
-  height: 200px;
+  border-bottom: 1px solid rgb(71, 71, 71);
+  height: 175px;
   align-items: flex-end;
   display: flex;
   margin-top: 30px;
@@ -122,6 +133,11 @@ p {
 }
 .legend {
   margin: 7px 0 10px 0;
+}
+.scale {
+  width: 10px;
+  border-right: 1px solid black;
+  height: 175px;
 }
 #chart1 {
   background: red;
@@ -139,6 +155,7 @@ p {
   background: orange;
 }
 .mark {
+  border-radius: 50%;
   width: 15px;
   height: 15px;
   display: inline-block;
