@@ -117,6 +117,9 @@ p {
   margin-bottom: 10px;
   margin-top: 55px;
   padding: 10px;
+  padding-left: 15px;
+  align-items: flex-end;
+  display: flex;
 }
 .charts {
   border-bottom: 1px solid rgb(71, 71, 71);
@@ -124,10 +127,9 @@ p {
   align-items: flex-end;
   display: flex;
   margin-top: 30px;
-  overflow: hidden;
 }
 .chart {
-  margin: 5px;
+  margin: 0 0 0 5px;
   width: 50px;
   transition: height 2s;
 }
@@ -135,9 +137,13 @@ p {
   margin: 7px 0 10px 0;
 }
 .scale {
-  width: 10px;
+  width: 0;
   border-right: 1px solid black;
-  height: 175px;
+  height: 170px;
+  overflow: visible;
+}
+.scale span {
+  margin-left: -10px;
 }
 #chart1 {
   background: red;
@@ -156,8 +162,8 @@ p {
 }
 .mark {
   border-radius: 50%;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   display: inline-block;
 }
 .mark1 {
