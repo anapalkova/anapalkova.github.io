@@ -174,12 +174,13 @@ kpk5.parentNode.parentNode.addEventListener('keyup', function() {
 let ipk = document.querySelector('.ipk');
 
 features.addEventListener('keyup', function() {
-  ipk.textContent =
+  ipk.textContent = (
     kpk1.textContent * b1.value.replace(/\,/g, '.') +
     kpk2.textContent * b2.value.replace(/\,/g, '.') +
     kpk3.textContent * b3.value.replace(/\,/g, '.') +
     kpk4.textContent * b4.value.replace(/\,/g, '.') +
-    kpk5.textContent * b5.value.replace(/\,/g, '.');
+    kpk5.textContent * b5.value.replace(/\,/g, '.')
+  ).toFixed(3);
 });
 
 //Строим график

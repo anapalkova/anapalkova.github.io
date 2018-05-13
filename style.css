@@ -123,7 +123,7 @@ p {
 }
 .charts {
   border-bottom: 1px solid rgb(71, 71, 71);
-  height: 175px;
+  height: 160px;
   align-items: flex-end;
   display: flex;
   margin-top: 30px;
@@ -140,10 +140,11 @@ p {
 .scale {
   width: 0;
   border-right: 1px solid black;
-  height: 186px;
+  height: 169px;
+  font-size: 14px;
 }
 .scale span {
-  margin-left: -10px;
+  margin-left: -9px;
 }
 #chart1 {
   background: red;
